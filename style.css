@@ -1,0 +1,473 @@
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+    scroll-snap-type: y mandatory;
+}
+
+*, *::before,*:after {
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px; /* 1rem = 10px*/
+    font-family: 'Montserrat', sans-serif;
+}
+/*header con navegacion del sitio*/
+header {
+    background-color: #ffffff;
+    display: flex;
+}
+
+.header-nav {
+    display: flex;
+    width: 80%;
+    justify-content: end;
+
+}
+
+.header-nav-list {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    font-size: 18px;
+    padding: 15px 15px;
+    line-height: 1.5;
+}
+
+.header-nav-list-item  a{
+    text-decoration: none;
+    color: black;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 100px;
+    text-decoration: none;
+    
+}
+.header-nav-list-item  a:hover {
+    background-color: #8338ec;
+    transition: ease-in .4s;
+}
+.button1 {
+    background-color: #8338ec;
+    color: white;
+    border-radius: 100px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*header con navegacion del sitio*/
+
+/*Presentacion*/
+
+.section {
+    display: flex;
+    justify-content: center;
+    padding: 130px 30px 130px;
+    margin: 1rem;
+    text-align: center;
+}
+
+.about-section {
+    flex-direction: row;
+    width: 100%;
+}
+
+
+.section-presentacion {
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: center;
+}
+.about-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+}
+
+.name {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-weight: 800;
+}
+h1 {
+    font-size: 60px;
+    font-weight: 900;
+}
+.about-name {
+    margin-top: 0;
+    margin-bottom: 5px;
+    color: #8338ec;
+}
+
+.about-descripcion {
+    color: #616161;
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+
+.button {
+    background-color: #8338ec;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 100px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.about-img {
+    max-width: 8000px;
+}
+
+img {
+    display: block;
+    width: 130%;
+    padding: 1rem;
+}
+
+/*INICIO DE MIS COCOCIMIENTOS*/
+
+.section2 {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+.section {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 100px 130px;
+}
+
+.pelotuda {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    padding: 130px 100px 130px;
+
+}
+
+.primero {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.article-icon {
+    width: 300px;
+    height: 200px;
+}
+.articulos-ordenados {
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 40px;
+padding: 6rem;
+}
+
+.article-icon {
+color: #2e2e31;
+padding: 40px 20px;
+background-color: #fff;
+    border: 1px solid #dddfe5;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px;
+}
+
+.fa-brands {
+    font-size: 4.71em;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    display: block;
+    transition: 0.3s;
+}
+
+.titulo-icono {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+
+.fa-html5 {
+    color: #e54d26;
+}
+
+.fa-css3-alt {
+    color: #3d8fc6;;
+}
+
+.fa-sass {
+    color: #c69;
+}
+
+.fa-js {
+    color: #f0db4f;
+}
+
+.fa-react {
+    color: #61dafb;;
+}
+
+.fa-git-alt {
+    color: #f34f29;;
+}
+/*FIN DE MIS CONOCIMIENTOS*/
+
+/*INICIO DE CITA*/
+
+.section-cita {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    background-color: #8338ec; ;
+    padding: 110px 40px 130px
+}
+
+.section-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.fa-quote-right {
+    font-size: 8rem;
+    color:  white;
+}
+
+.cita-p {
+    font-size: 2rem;
+    max-width: 600px;
+}
+
+.cita-h3 {
+    font-size: 1.69em;
+    color: white;
+    margin-bottom: 0;
+}
+/*FIN DE CITA*/
+
+/*MIS PROYECTOS */
+
+.mis-proyectos {
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+}
+
+.section15 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 130px 100px 130px;
+}
+
+.proyecto-terminado {
+    display: flex;
+    flex-direction: column;
+    justify-content:  center;
+    padding: 130px 100px 130px;
+}
+
+.tercero {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.boluda {
+display: flex;
+flex-direction: column;
+width: 300px;
+height: 300px;
+color: #2e2e31;
+padding: 40px 20px;
+background-color: #fff;
+border: 1px solid #dddfe5;
+border-radius: 8px;
+margin: 10px;
+padding: 30px;
+}
+
+.articulos-desordenados {
+    display: flex;
+flex-wrap: wrap;
+justify-content: center;
+margin-top: 40px;
+padding: 6rem;
+}
+
+.imagenes-proyecto {
+    font-size: 4.71em;
+    margin-bottom: 20px;
+    display: block;
+    width: 90%;
+}
+
+.cornuda {
+    font-size: 1.25em;
+    font-weight: 700;
+}
+/*FIN DE MIS PROYECTOS*/
+
+/*INICIO DE FORMULARIO*/
+
+.contact-formulario {
+    background-color: aliceblue;
+    padding-top: 200px;
+}
+.section-formulario {
+    display: flex;
+    justify-content: center;
+    padding: 110px 40px 130px;
+    text-align: center;
+}
+.contenido-info {
+    display: flex;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 80px 60px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+
+}
+.escribime {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 40px 60px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    width: 50%;
+}
+
+
+.contactame {
+    text-align: left;
+    background-color: #ffffff;
+    padding: 80px 60px;
+    border-radius: 15px;
+    border: 1px solid #e0e0e0;
+    width: 50%;
+}
+
+.titulo {
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.parrafo-form {
+    line-height: 1.4;
+}
+
+.class-lista-formulario {
+    list-style: none;
+    text-decoration: none;
+    width: 40%;
+}
+
+.form1 {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+}
+
+
+
+.icono {
+    font-size: 2rem;
+    color:#8338ec;
+
+}
+
+a {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    color:#8338ec; 
+}
+.formulario {
+    width: min(60rem, 100% ); /*utiliza el valor mas pequeño */
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+
+.formulario-fieldset {
+    border: none;
+}
+
+label {
+    margin-bottom: 10px;
+    display: block;
+    font-weight: 600;
+    margin-top: 5px;
+}
+
+input {
+    border: 0;
+    border-radius: 20px;
+    background-color: whitesmoke;
+    border: 1px solid #f6f7fb;
+    font-size: var(--text-sm);
+    padding: 10px 15px;
+    display: block;
+    width: 100%;
+    outline: none;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+    transition: 0.2s;
+}
+.alinear-derecha {
+width: 133px;
+height: 119px;
+}
+/*FIN DE FORMULARIO*/
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 80px 20px 60px;
+    background-color: #8338ec;
+    color: white;
+}
+
+.navegacion-footer {
+    justify-content: space-between;
+    list-style: none;
+    width: 40%;
+    font-size: 18px;
+    padding: 15px 15px;
+    line-height: 1.5;
+
+}
+
+.navegacion-iconos {
+    display: flex;
+}
+
+.ul-menu {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    padding: 15px 15px;
+    border-radius: 100px;
+    text-decoration: none;
+    list-style: none;
+}
