@@ -17,14 +17,12 @@ header {
     background-color: #ffffff;
     display: flex;
 }
-
 .header-nav {
     display: flex;
     width: 80%;
     justify-content: end;
 
 }
-
 .header-nav-list {
     display: flex;
     justify-content: space-between;
@@ -33,6 +31,13 @@ header {
     font-size: 18px;
     padding: 15px 15px;
     line-height: 1.5;
+}
+
+@media (min-width: 768px){
+    .header-nav {
+        flex-direction:row;
+        justify-content: space-between;
+    }
 }
 
 .header-nav-list-item  a{
@@ -53,7 +58,6 @@ header {
     background-color: #8338ec;
     color: white;
     border-radius: 100px;
-    font-weight: 500;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -61,7 +65,6 @@ header {
 /*header con navegacion del sitio*/
 
 /*Presentacion*/
-
 .section {
     display: flex;
     justify-content: center;
@@ -69,13 +72,10 @@ header {
     margin: 1rem;
     text-align: center;
 }
-
 .about-section {
     flex-direction: row;
     width: 100%;
 }
-
-
 .section-presentacion {
     display: flex;
     justify-content: center;
@@ -90,7 +90,7 @@ header {
     text-align: left;
 }
 
-.name {
+.nombre {
     font-size: 30px;
     margin-top: 0;
     margin-bottom: 5px;
@@ -100,7 +100,7 @@ h1 {
     font-size: 60px;
     font-weight: 900;
 }
-.about-name {
+.nombre1 {
     margin-top: 0;
     margin-bottom: 5px;
     color: #8338ec;
@@ -127,10 +127,6 @@ h1 {
     background-color: black;
 }
 
-.about-img {
-    max-width: 8000px;
-}
-
 img {
     display: block;
     width: 130%;
@@ -151,7 +147,7 @@ img {
     padding: 130px 100px 130px;
 }
 
-.pelotuda {
+.div-conocimientos {
     display: flex;
     flex-direction: column;
     justify-content:  center;
@@ -169,17 +165,17 @@ img {
     height: 200px;
 }
 .articulos-ordenados {
-display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 40px;
-padding: 6rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 6rem;
 }
 
 .article-icon {
-color: #2e2e31;
-padding: 40px 20px;
-background-color: #fff;
+    color: #2e2e31;
+    padding: 40px 20px;
+    background-color: #fff;
     border: 1px solid #dddfe5;
     border-radius: 8px;
     margin: 10px;
@@ -191,7 +187,6 @@ background-color: #fff;
     margin-top: 24px;
     margin-bottom: 20px;
     display: block;
-    transition: 0.3s;
 }
 
 .titulo-icono {
@@ -231,7 +226,7 @@ background-color: #fff;
     justify-content: center;
     text-align: center;
     background-color: #8338ec; ;
-    padding: 110px 40px 130px
+    padding: 110px 40px 130px ;
 }
 
 .section-div {
@@ -285,26 +280,25 @@ background-color: #fff;
     font-weight: 900;
 }
 
-.boluda {
-display: flex;
-flex-direction: column;
-width: 300px;
-height: 300px;
-color: #2e2e31;
-padding: 40px 20px;
-background-color: #fff;
-border: 1px solid #dddfe5;
-border-radius: 8px;
-margin: 10px;
-padding: 30px;
+.art {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 300px;
+    color: #2e2e31;
+    padding: 40px 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    margin: 10px;
+    padding: 30px;
 }
 
 .articulos-desordenados {
     display: flex;
-flex-wrap: wrap;
-justify-content: center;
-margin-top: 40px;
-padding: 6rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 6rem;
 }
 
 .imagenes-proyecto {
@@ -314,7 +308,7 @@ padding: 6rem;
     width: 90%;
 }
 
-.cornuda {
+.art-p {
     font-size: 1.25em;
     font-weight: 700;
 }
@@ -358,7 +352,6 @@ padding: 6rem;
     background-color: #ffffff;
     padding: 80px 60px;
     border-radius: 15px;
-    border: 1px solid #e0e0e0;
     width: 50%;
 }
 
@@ -383,15 +376,10 @@ padding: 6rem;
     padding: 5px 10px;
     border-radius: 100px;
 }
-
-
-
 .icono {
     font-size: 2rem;
     color:#8338ec;
-
 }
-
 a {
     display: flex;
     align-items: center;
@@ -401,7 +389,6 @@ a {
     color:#8338ec; 
 }
 .formulario {
-    width: min(60rem, 100% ); /*utiliza el valor mas pequeño */
     margin: 0 auto;
     padding: 2rem;
     border-radius: 1rem;
@@ -423,13 +410,10 @@ input {
     border-radius: 20px;
     background-color: whitesmoke;
     border: 1px solid #f6f7fb;
-    font-size: var(--text-sm);
     padding: 10px 15px;
     display: block;
     width: 100%;
     outline: none;
-    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
-    transition: 0.2s;
 }
 .alinear-derecha {
 width: 133px;
@@ -439,29 +423,29 @@ height: 119px;
 
 footer {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-    padding: 80px 20px 60px;
-    background-color: #8338ec;
-    color: white;
+    text-align: center;
+    background-color: #8338ec; ;
+    padding: 110px 40px 130px
 }
 
 .navegacion-footer {
-    justify-content: space-between;
-    list-style: none;
-    width: 40%;
-    font-size: 18px;
-    padding: 15px 15px;
-    line-height: 1.5;
-
-}
-
-.navegacion-iconos {
     display: flex;
+    width: 80%;
+    justify-content: end;
+
 }
 
-.ul-menu {
+.ul-menu{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    width: 90%;
+    font-size: 18px;
+    line-height: 1.5;
+    
+}
+.li-footer {
     text-decoration: none;
     color: white;
     display: flex;
@@ -469,5 +453,28 @@ footer {
     padding: 15px 15px;
     border-radius: 100px;
     text-decoration: none;
+    
+}
+.footer-icono {
+    border-radius: 50%;
+    width: 2.7rem;
+    margin: 10px;
+    display: block;
+}
+
+.ul-menu-iconos {
+    display: flex;
     list-style: none;
 }
+.icon {
+    display: block;
+    width: 2.7rem;
+    height: 2.7rem;
+    background-color: white;
+    color: #8338ec;
+    border-radius: 50%;
+    font-size: 1.2rem;
+    line-height: 2.7rem;
+    text-align: center;
+}
+/*fin de footer*/
