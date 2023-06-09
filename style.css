@@ -2,6 +2,11 @@ html {
     font-size: 62.5%;
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
+    padding: 25px 0;
+    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
+    position: fixed;
+    top: 0;
+    transition: 0.4s;
 }
 
 *, *::before,*:after {
@@ -11,60 +16,81 @@ html {
 body {
     font-size: 16px; /* 1rem = 10px*/
     font-family: 'Montserrat', sans-serif;
+    width: 100%;
 }
 /*header con navegacion del sitio*/
 header {
-    background-color: #ffffff;
-    display: flex;
+    background-color:#61dafb;
+    width: 100%;
 }
 .header-nav {
     display: flex;
-    width: 80%;
-    justify-content: end;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media (max-width: 1335px){
+    .header-nav-list{
+    width: auto;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 100%;
+    }
 
 }
 .header-nav-list {
-    display: flex;
-    justify-content: space-between;
+    color: white;
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 1rem;
     list-style: none;
-    width: 40%;
-    font-size: 18px;
-    padding: 15px 15px;
-    line-height: 1.5;
-}
-
-@media (min-width: 768px){
-    .header-nav {
-        flex-direction:row;
-        justify-content: space-between;
-    }
-}
-
-.header-nav-list-item  a{
-    text-decoration: none;
-    color: black;
     display: flex;
-    align-items: center;
-    padding: 15px 15px;
-    border-radius: 100px;
-    text-decoration: none;
-    
+    margin-left: 60%;
 }
 .header-nav-list-item  a:hover {
-    background-color: #8338ec;
+    background-color:#8338ec;
     transition: ease-in .4s;
 }
+
 .button1 {
     background-color: #8338ec;
     color: white;
-    border-radius: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 2rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    border: none;
+}
+
+.button1:hover {
+    cursor: pointer;
 }
 /*header con navegacion del sitio*/
 
 /*Presentacion*/
+@media (max-width: 990px){
+    .section{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 60%;
+    background-color: navy;
+    }
+
+}
+@media (max-width: 990px){
+    .section-presentacion{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    margin-right: 60%;
+    background-color: navy;
+    }
+
+}
 .section {
     display: flex;
     justify-content: center;
