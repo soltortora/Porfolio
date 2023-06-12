@@ -3,10 +3,7 @@ html {
     box-sizing: border-box;
     scroll-snap-type: y mandatory;
     padding: 25px 0;
-    box-shadow: 0 0 29px 0 rgba(134, 134, 134, 0.25);
-    position: fixed;
-    top: 0;
-    transition: 0.4s;
+    position: absolute;
 }
 
 *, *::before,*:after {
@@ -20,7 +17,7 @@ body {
 }
 /*header con navegacion del sitio*/
 header {
-    background-color:#61dafb;
+    background-color:aliceblue;
     width: 100%;
 }
 .header-nav {
@@ -37,7 +34,6 @@ header {
     align-items: center;
     margin-right: 100%;
     }
-
 }
 .header-nav-list {
     color: white;
@@ -50,13 +46,12 @@ header {
     margin-left: 60%;
 }
 .header-nav-list-item  a:hover {
-    background-color:#8338ec;
+    background-color:white;
     transition: ease-in .4s;
 }
 
 .button1 {
-    background-color: #8338ec;
-    color: white;
+    background-color: white;
     font-size: 2rem;
     text-decoration: none;
     text-transform: uppercase;
@@ -77,7 +72,6 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-right: 60%;
-    background-color: navy;
     }
 
 }
@@ -87,7 +81,6 @@ header {
     justify-content: space-around;
     align-items: center;
     margin-right: 60%;
-    background-color: navy;
     }
 
 }
@@ -149,9 +142,6 @@ h1 {
     align-items: center;
 }
 
-.button:hover {
-    background-color: black;
-}
 
 img {
     display: block;
@@ -160,17 +150,25 @@ img {
 }
 
 /*INICIO DE MIS COCOCIMIENTOS*/
-
 .section2 {
     display: flex;
     flex-direction: column;
     background-color: aliceblue;
 }
-.section {
+.section3 {
     display: flex;
     justify-content: center;
     text-align: center;
     padding: 130px 100px 130px;
+}
+
+@media (max-width: 990px){
+    .section3{
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    }
+
 }
 
 .div-conocimientos {
@@ -198,6 +196,15 @@ img {
     padding: 6rem;
 }
 
+@media (max-width: 1186px){
+    .articulos-ordenados{
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #61dafb;
+    }
+
+}
 .article-icon {
     color: #2e2e31;
     padding: 40px 20px;
@@ -459,7 +466,15 @@ footer {
     display: flex;
     width: 80%;
     justify-content: end;
+}
 
+.nav-ultima {
+    display: flex;
+    align-items: center;
+    padding: 5px 10px;
+    border-radius: 100px;
+    text-decoration: none;
+    color: white;
 }
 
 .ul-menu{
@@ -471,36 +486,27 @@ footer {
     line-height: 1.5;
     
 }
-.li-footer {
-    text-decoration: none;
-    color: white;
-    display: flex;
-    align-items: center;
-    padding: 15px 15px;
-    border-radius: 100px;
-    text-decoration: none;
-    
-}
-.footer-icono {
-    border-radius: 50%;
-    width: 2.7rem;
-    margin: 10px;
-    display: block;
-}
-
 .ul-menu-iconos {
     display: flex;
     list-style: none;
+    justify-content: center;
+    align-items: baseline;
+
 }
 .icon {
     display: block;
     width: 2.7rem;
     height: 2.7rem;
     background-color: white;
-    color: #8338ec;
-    border-radius: 50%;
-    font-size: 1.2rem;
+    color:#8338ec;
+    border-radius: 60%;
+    font-size: 2.1rem;
     line-height: 2.7rem;
     text-align: center;
+}
+.a-footer {
+    color: white;
+    margin: 5px;
+    display: block;
 }
 /*fin de footer*/
